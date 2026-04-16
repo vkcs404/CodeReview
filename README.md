@@ -1,7 +1,4 @@
 # CodeReview
 
-## Para trocar de branch usar
-```bash
-git checkout dev
-```
-
+## Vitor Santos
+## Andre Rezende
