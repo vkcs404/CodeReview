@@ -1,7 +1,7 @@
 # CodeReview
 
 ## Para trocar de branch usar
-'''bash
+```bash
 git checkout dev
-'''
+```
 
