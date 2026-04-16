@@ -5,10 +5,29 @@ def sao_anagramas(string1, string2):
   return s1 == s2
 
 def cifra_de_cesar(texto, deslocamento):
-# Implemente a lógica
-  pass
+    resultado = ""
+
+    for char in texto:
+        if char.isalpha():
+            #Define base (maiúscula ou minúscula)
+            base = ord('A') if char.isupper() else ord('a')
+            #Aplica deslocamento circular
+            novo_char = chr((ord(char) - base + deslocamento) % 26 + base)
+            resultado += novo_char
+        else:
+            #Mantém caracteres não alfabéticos
+            resultado += char
+
+    return resultado
 
 def encontrar_maior_palavra(frase):
   # Implemente a logica
   pass
 
+
+#Zona de Testes
+print(sao_anagramas("amor", "roma"))
+print(sao_anagramas("gato", "cabra"))
+
+print(cifra_de_cesar("abc", 2))
+print(cifra_de_cesar("Ataque ao Amanhecer!", 5))
